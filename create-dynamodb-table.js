@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 const dynamodb = new AWS.DynamoDB({ region: 'us-east-1' });
 
 const params = {
-  TableName: 'my-table2',
+  TableName: 'my-table4',
   KeySchema: [
     { AttributeName: 'id', KeyType: 'HASH' },
     { AttributeName: 'date', KeyType: 'RANGE' }

@@ -45,7 +45,7 @@ pipeline {
           cd /var/lib/jenkins/workspace/DEV/test-dynamo
           sudo mkdir -p /home/jenkins/scripts/backup
           cp -rf  dynamo-to-s3.js node_modules /home/jenkins/scripts/backup
-          crontab -l | { cat; echo "*/5 * * * * node /home/jenkins/scripts/backup/dynamo-to-s3.js"; } | crontab -
+          crontab -l | { cat; echo "0 2 * * * node /home/jenkins/scripts/backup/dynamo-to-s3.js"; } | crontab -
           crontab -l
           '''
 

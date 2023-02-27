@@ -1,7 +1,7 @@
 pipeline {
   agent  { label 'default' }  
   environment {
-      ConfigRepo="https://github.com/Tap-Payments/devstack.git"
+      ConfigRepo="https://github.com/malikubaid/assignment.git"
       BranchName="dynamo-test"
     }
 
